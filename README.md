@@ -35,6 +35,7 @@ Script applikasi : "server.js"
  
  - ada tiga incoming message yang digunakan yaitu: startResponse, error, dan iceCandidate.  
  
+ ```
  ws.onmessage = function(message) {
    var parsedMessage = JSON.parse(message.data);
    console.info('Received message: ' + message.data);
@@ -63,3 +64,4 @@ Script applikasi : "server.js"
       console.error('Unrecognized message', parsedMessage);
    }
 }
+```
