@@ -2,10 +2,10 @@
 Audio one2one call WebRTC kurento based,
 
 #project setup
-
+```
 $npm install
 $npm start
-
+```
 
 
 #Application Server Logic
@@ -30,9 +30,9 @@ Script applikasi : "server.js"
 
 #Client-Side Logic
  - Untuk melakukan sambungan websocket ke aplikasi server, dilakukan menggunakan class WebSocket pada javascript.Library yang digunakan adalah kurento-utils.js
- ```
+```
 	ex. var ws = new WebSocket('ws://' + location.host + '/one2one');
-	```
+```
  - selanjutnya onMessage Listener digunakan untuk menangani  JSON signaling protocol pada sisi client.
  
  - ada tiga incoming message yang digunakan yaitu: startResponse, error, dan iceCandidate.  
